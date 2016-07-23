@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MusicCenter.Device">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAEAAAIA=</HashCode>
+      <FileName>Device.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.MusicCenter" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAkAAAAg=</HashCode>
+      <FileName>MusicCenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.MusicDevice" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAABAAAAgAAAACAAEAAAEAAAAAEAAAIA=</HashCode>
+      <FileName>MusicDevice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.Program" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.Radio" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAIAAAAAAASBAIAAEAAAACAAAAAAAAAAAAEAAAIA=</HashCode>
+      <FileName>Radio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.Radio_2">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQAIAAAAAAACBAgAAAAAAACAAAAAAAAAAAAEAAAIA=</HashCode>
+      <FileName>Radio_2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.RadioChannel">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>RadioChannel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.Volume">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAgAAAACAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Volume.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MusicCenter.MusicCenterMode">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAEA=</HashCode>
+      <FileName>MusicCenterMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
