@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    interface IChangeFrostMode
+    interface IDeviceChangeMode
     {
-        void FrostMode();
+        void ChangeMode();
     }
 }

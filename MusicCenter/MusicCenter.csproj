@@ -41,16 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeFrostMode.cs" />
+    <Compile Include="Class\ChangeFrostMode.cs" />
+    <Compile Include="Class\AirCondModeChng.cs" />
     <Compile Include="Class\ChangeCD.cs" />
     <Compile Include="abstract class\Device.cs" />
+    <Compile Include="Class\Temperature.cs" />
+    <Compile Include="Devices\AirCond.cs" />
     <Compile Include="Devices\Refrigerator.cs" />
+    <Compile Include="Enum\AirCondMode.cs" />
     <Compile Include="Enum\FrostLevel.cs" />
-    <Compile Include="Interfaces\IChangeFrostMode.cs" />
+    <Compile Include="Interfaces\IDeviceChangeMode.cs" />
     <Compile Include="Interfaces\IdoorOpen.cs" />
     <Compile Include="Interfaces\IFrostdoorOpen.cs" />
-    <Compile Include="Interfaces\IMusicCenterMode.cs" />
     <Compile Include="Interfaces\IRadioChannel.cs" />
+    <Compile Include="Interfaces\ITemperature.cs" />
     <Compile Include="Interfaces\IVolume.cs" />
     <Compile Include="Devices\MusicCenter.cs" />
     <Compile Include="Enum\MusicCenterMode.cs" />

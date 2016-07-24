@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    class Refrigerator : Device, IOn_Off , IChangeFrostMode , IdoorOpen , IFrostdoorOpen
+    class Refrigerator : Device, IOn_Off, IDeviceChangeMode, IdoorOpen, IFrostdoorOpen
     {
         
         private bool doorState;
@@ -69,7 +69,7 @@ namespace MusicCenter
             }
         }
 
-        public void FrostMode()
+        public void ChangeMode()
         {
             frostmode.FrostMode();
         }

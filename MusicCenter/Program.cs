@@ -18,6 +18,7 @@ namespace MusicCenter
             devDictionary.Add("LG", new TV(true, "LG", new TVChanneChangel(), new Volume()));
             devDictionary.Add("Sony", new MusicCenter(true, "Sony", new Volume(), new RadioChannel(88.5F), new ChangeCD(1), new MusicMode()));
             devDictionary.Add("Libher", new Refrigerator(true, "Libher" ,new ChangeFrostMode() , false, false));
+            devDictionary.Add("Midea", new AirCond(true, "Midea", new AirCondModeChng(), new Temperature()));
 
             while (true)
             {
@@ -191,10 +192,10 @@ namespace MusicCenter
                         }
                         break;
 
-                        case "frostmode":
-                        if (devDictionary[commands[0]] is IChangeFrostMode)
+                        case "mode":
+                        if (devDictionary[commands[0]] is IDeviceChangeMode)
                         {
-                            ((IChangeFrostMode)devDictionary[commands[0]]).FrostMode();
+                            ((IDeviceChangeMode)devDictionary[commands[0]]).ChangeMode();
                         }
                         else
                         {
@@ -285,7 +286,7 @@ namespace MusicCenter
             Console.WriteLine("\tname mode");
 
             Console.WriteLine("    Commands for device fridge ");
-            Console.WriteLine("\tname frostmode");
+            Console.WriteLine("\tname mode");
             Console.WriteLine("\tname open");
             Console.WriteLine("\tname close");
             Console.WriteLine("\tname fopen");

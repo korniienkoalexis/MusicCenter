@@ -9,10 +9,7 @@ namespace MusicCenter
     class Volume
     {
         private int volumeLevel = 10;
-
-        
-
-         
+       
         public void UpVolume()
         {
                 volumeLevel++;

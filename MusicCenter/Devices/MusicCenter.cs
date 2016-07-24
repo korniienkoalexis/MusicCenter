@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    class MusicCenter : Device ,IVolume ,IRadioChannel, IOn_Off
+    class MusicCenter : Device, IVolume, IDeviceChangeMode, IOn_Off
     {
         
         public MusicCenter(bool state, string name, Volume music_volume, RadioChannel radio_channel , ChangeCD cd , MusicMode musicmode)

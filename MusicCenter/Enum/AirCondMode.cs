@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    interface IMusicCenterMode
+    enum AirCondMode
     {
-        void ChangeMode();
+        Cool,
+        Heat,
+        Fan
     }
 }
