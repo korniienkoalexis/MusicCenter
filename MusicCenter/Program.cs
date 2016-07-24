@@ -250,6 +250,30 @@ namespace MusicCenter
                             Console.ReadLine();
                         }
                         break;
+
+                        case "temperature+":
+                        if (devDictionary[commands[0]] is ITemperature)
+                        {
+                            ((ITemperature)devDictionary[commands[0]]).UpTemperature();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Device with name " + commands[0] + "dosn`t exist");
+                            Console.ReadLine();
+                        }
+                        break;
+
+                        case "temperature-":
+                        if (devDictionary[commands[0]] is ITemperature)
+                        {
+                            ((ITemperature)devDictionary[commands[0]]).DownTemperature();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Device with name " + commands[0] + "dosn`t exist");
+                            Console.ReadLine();
+                        }
+                        break;
                     }
                 }
             }
@@ -292,10 +316,10 @@ namespace MusicCenter
             Console.WriteLine("\tname fopen");
             Console.WriteLine("\tname fclose");
 
-            Console.WriteLine("    Допустимо для устройств таких как jalousie и lamp ");
-            Console.WriteLine("\tимя устройства low");
-            Console.WriteLine("\tимя устройства medium");
-            Console.WriteLine("\tимя устройства high");
+            Console.WriteLine("    Commands for device AirCoonditioner ");
+            Console.WriteLine("\tname temperature+");
+            Console.WriteLine("\tname temperature-");
+            Console.WriteLine("\tname mode");
 
             Console.WriteLine("\texit");
             Console.WriteLine("Нажмите любую клавишу для продолжения");
@@ -309,6 +333,7 @@ namespace MusicCenter
             Console.WriteLine("\ttv - TV");
             Console.WriteLine("\tmusiccenter - Music Center");
             Console.WriteLine("\tfridge - Refregirator");
+            Console.WriteLine("\tairconditioner - AirConditioner");
             Console.WriteLine("Press enter to continue");
             Console.ReadLine();
 
