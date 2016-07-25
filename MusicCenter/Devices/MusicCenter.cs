@@ -6,62 +6,55 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    class MusicCenter : Device, IVolume, IDeviceChangeMode, IOn_Off
+    class MusicCenter : Device, IVolume, IDeviceChangeMode, IOnOff
     {
         
-        public MusicCenter(bool state, string name, Volume music_volume, RadioChannel radio_channel , ChangeCD cd , MusicMode musicmode)
+        public MusicCenter(bool state, string name, Volume musicVolume, RadioChannel radioChannel , ChangeCD cd , MusicMode musicmode)
             : base(state, name)
         {
-            mc_Volume = music_volume;
-            mr_channel = radio_channel;
-            mr_cdchange = cd;
-            mr_mode = musicmode;
+            mcVolume = musicVolume;
+            mcChannel = radioChannel;
+            mcChangeCD = cd;
+            mcMode = musicmode;
         }
 
-        private Volume mc_Volume;
-        private RadioChannel mr_channel;
-        private ChangeCD mr_cdchange;
-        private MusicMode mr_mode;
+        private Volume mcVolume;
+        private RadioChannel mcChannel;
+        private ChangeCD mcChangeCD;
+        private MusicMode mcMode;
 
-        public override void On()
-        {
-            state = true;
-        }
-        public override void Off()
-        {
-            state = false;
-        }
+        
 
         public void UpVolume()
         {
 
-            mc_Volume.UpVolume();
+            mcVolume.UpVolume();
         }
 
         public void DownVolume()
         {
 
-            mc_Volume.DownVolume();
+            mcVolume.DownVolume();
         }
 
         public void NextChannal()
         {
-            mr_channel.NextChannal();
+            mcChannel.NextChannal();
         }
 
         public void PrevChannel()
         {
-            mr_channel.PrevChannel();
+            mcChannel.PrevChannel();
         }
 
          public void NextCD()
          {
-             mr_cdchange.NextCD();
+             mcChangeCD.NextCD();
          }
 
         public void ChangeMode()
          {
-             mr_mode.ChangeMode();
+             mcMode.ChangeMode();
          }
 
         public override string Info()
@@ -77,11 +70,11 @@ namespace MusicCenter
             }
 
 
-            float channel = mr_channel.GetChannel();
-            int volume = mc_Volume.GetVolume();
-            int numCD = mr_cdchange.GetCD();
+            float channel = mcChannel.GetChannel();
+            int volume = mcVolume.GetVolume();
+            int numCD = mcChangeCD.GetCD();
 
-            return "Music Center: " + name + " state: " + state + " mode: " + mr_mode.GetMode() + " Volume: " + volume + " Channel: " + channel + " Disk# " + numCD;
+            return "Music Center: " + name + " state: " + state + " mode: " + mcMode.GetMode() + " Volume: " + volume + " Channel: " + channel + " Disk# " + numCD;
         }
 
 

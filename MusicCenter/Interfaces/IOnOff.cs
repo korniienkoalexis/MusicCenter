@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    interface IOn_Off
+    interface IOnOff
     {
         void On();
 

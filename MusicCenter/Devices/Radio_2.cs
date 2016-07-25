@@ -6,47 +6,40 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    class Radio_2 : Device , IVolume, IRadioChannel, IOn_Off
+    class Radio_2 : Device , IVolume, IRadioChannel, IOnOff
     {
-        public Radio_2(bool state, string name, Volume radio_volume , RadioChannel radio_channel)
+        public Radio_2(bool state, string name, Volume radioVolume , RadioChannel radioChannel)
             : base(state, name)
         {
-            r_Volume = radio_volume;
-            r_channel = radio_channel;
+            rVolume = radioVolume;
+            rChannel = radioChannel;
         }
 
-        private Volume r_Volume;
-        private RadioChannel r_channel;
+        private Volume rVolume;
+        private RadioChannel rChannel;
        
-        public override void On()
-        {
-            state = true;
-        }
-        public override void Off()
-        {
-            state = false;
-        }
+       
 
         public void UpVolume()
         {
             
-            r_Volume.UpVolume();
+            rVolume.UpVolume();
         }
 
         public void DownVolume()
         {
 
-            r_Volume.DownVolume();
+            rVolume.DownVolume();
         }
 
         public void NextChannal()
         {
-            r_channel.NextChannal();
+            rChannel.NextChannal();
         }
 
         public void PrevChannel()
         {
-            r_channel.PrevChannel();
+            rChannel.PrevChannel();
         }
 
 
@@ -62,8 +55,8 @@ namespace MusicCenter
             {
                 state = "OFF";
             }
-            float channel = r_channel.GetChannel();
-            int volume = r_Volume.GetVolume();
+            float channel = rChannel.GetChannel();
+            int volume = rVolume.GetVolume();
             return "Radio " + name + ": " + state + " Volume: " + volume + " Channel: " + channel ;
         }
     }

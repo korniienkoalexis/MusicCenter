@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    class AirCond : Device, IOn_Off, ITemperature, IDeviceChangeMode
+    class AirCond : Device, IOnOff, ITemperature, IDeviceChangeMode
     {
         public AirCond(bool state, string name, AirCondModeChng airmode, Temperature temperature)
             : base(state, name)
@@ -17,14 +17,7 @@ namespace MusicCenter
         private AirCondModeChng aircond_mode;
         private Temperature aircond_temperature;
 
-        public override void On()
-        {
-            state = true;
-        }
-        public override void Off()
-        {
-            state = false;
-        }
+        
 
         public void UpTemperature()
         {

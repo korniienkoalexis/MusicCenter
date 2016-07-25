@@ -157,9 +157,9 @@ namespace MusicCenter
                             }
                             break;
                         case "on":
-                            if (devDictionary[commands[0]] is IOn_Off)
+                            if (devDictionary[commands[0]] is IOnOff)
                             {
-                                ((IOn_Off)devDictionary[commands[0]]).On();
+                                ((IOnOff)devDictionary[commands[0]]).On();
                             }
                             else
                             {
@@ -169,9 +169,9 @@ namespace MusicCenter
                             break;
 
                         case "off":
-                            if (devDictionary[commands[0]] is IOn_Off)
+                            if (devDictionary[commands[0]] is IOnOff)
                             {
-                                ((IOn_Off)devDictionary[commands[0]]).Off();
+                                ((IOnOff)devDictionary[commands[0]]).Off();
                             }
                             else
                             {

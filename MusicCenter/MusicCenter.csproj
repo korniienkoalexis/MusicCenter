@@ -60,7 +60,7 @@
     <Compile Include="Enum\MusicCenterMode.cs" />
     <Compile Include="abstract class\MusicDevice.cs" />
     <Compile Include="Class\MusicMode.cs" />
-    <Compile Include="Interfaces\IOn_Off.cs" />
+    <Compile Include="Interfaces\IOnOff.cs" />
     <Compile Include="Interfaces\ITVChangeChannel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    class TV : Device, IVolume, ITVChangeChannel, IOn_Off
+    class TV : Device, IVolume, ITVChangeChannel, IOnOff
     {
-        public TV(bool state, string name, TVChanneChangel tv_channel, Volume tv_volume)
+        public TV(bool state, string name, TVChanneChangel tvChannel, Volume tvVolume)
             : base(state, name)
         {
-            tv_numchannel = tv_channel;
-            tv_vol = tv_volume;
+            tvNumchannel = tvChannel;
+            tvVol = tvVolume;
         }
         public TV(bool state, string name)
             : base(state, name)
@@ -20,36 +20,29 @@ namespace MusicCenter
 
         }
 
-        private TVChanneChangel tv_numchannel;
-        private Volume tv_vol;
+        private TVChanneChangel tvNumchannel;
+        private Volume tvVol;
 
-        public override void On()
-        {
-            state = true;
-        }
-        public override void Off()
-        {
-            state = false;
-        }
+        
 
         public void NextChannal()
         {
-            tv_numchannel.NextChannal();
+            tvNumchannel.NextChannal();
         }
 
         public void PrevChannel()
         {
-            tv_numchannel.PrevChannel();
+            tvNumchannel.PrevChannel();
         }
 
         public void UpVolume()
         {
-            tv_vol.UpVolume();
+            tvVol.UpVolume();
         }
 
         public void DownVolume()
         {
-            tv_vol.DownVolume();
+            tvVol.DownVolume();
         }
 
 
@@ -65,8 +58,8 @@ namespace MusicCenter
             {
                 state = "OFF";
             }
-            int volume = tv_vol.GetVolume();
-            string channel = tv_numchannel.GetChannel();
+            int volume = tvVol.GetVolume();
+            string channel = tvNumchannel.GetChannel();
             return "TV name: " + name + " state: " + state  + " Volume: " + volume + " Channel: " + channel;
         }
     } 
