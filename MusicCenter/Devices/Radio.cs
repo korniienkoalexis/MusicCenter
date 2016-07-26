@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MusicCenter
 {
-    class Radio_2 : Device , IVolume, IRadioChannel, IOnOff
+    class Radio : Device , IVolume, IRadioChannel, IOnOff
     {
-        public Radio_2(bool state, string name, Volume radioVolume , RadioChannel radioChannel)
+        public Radio(bool state, string name, Volume radioVolume , RadioChannel radioChannel)
             : base(state, name)
         {
             rVolume = radioVolume;

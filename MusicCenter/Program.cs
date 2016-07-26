@@ -14,7 +14,7 @@ namespace MusicCenter
             IDictionary<string, Device> devDictionary = new Dictionary<string, Device>();
 
 
-            devDictionary.Add("Radiola", new Radio_2(true, "Radiola", new Volume(), new RadioChannel(88.5F)));
+            devDictionary.Add("Radiola", new Radio(true, "Radiola", new Volume(), new RadioChannel(88.5F)));
             devDictionary.Add("LG", new TV(true, "LG", new TVChanneChangel(), new Volume()));
             devDictionary.Add("Sony", new MusicCenter(true, "Sony", new Volume(), new RadioChannel(88.5F), new ChangeCD(1), new MusicMode()));
             devDictionary.Add("Libher", new Refrigerator(true, "Libher" ,new ChangeFrostMode() , false, false));
@@ -55,7 +55,7 @@ namespace MusicCenter
                             switch (commands[1].ToLower())
                             {
                                 case "radio":
-                                    devDictionary.Add(commands[2], new Radio_2(true, commands[2], new Volume(), new RadioChannel(88.5F)));
+                                    devDictionary.Add(commands[2], new Radio(true, commands[2], new Volume(), new RadioChannel(88.5F)));
                                     break;
                                 case "tv":
                                     devDictionary.Add(commands[2], new TV(true, commands[2], new TVChanneChangel(), new Volume()));

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MusicCenter.Device" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAEAAAIA=</HashCode>
+      <FileName>abstract class\Device.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicCenter.MusicDevice" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAABAAAAgAAAACAAEAAAEAAAAAEAAAIA=</HashCode>
+      <FileName>abstract class\MusicDevice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.AirCondModeChng" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAAAA=</HashCode>
+      <FileName>Class\AirCondModeChng.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.ChangeCD" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAEAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\ChangeCD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.ChangeFrostMode" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\ChangeFrostMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.MusicMode" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAg=</HashCode>
+      <FileName>Class\MusicMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.RadioChannel" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Class\RadioChannel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.Temperature" Collapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAAAA=</HashCode>
+      <FileName>Class\Temperature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.TVChanneChangel" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAgAAAAABAAA=</HashCode>
+      <FileName>Class\TVChanneChangel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.Volume" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAgAAAACAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Volume.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicCenter.AirCond" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAABAAAAAAAQAAAAAAAAAAAAAQAAAAAkAAAAA=</HashCode>
+      <FileName>Devices\AirCond.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicCenter.MusicCenter" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAACAAAAAASBAAAAAAAAACAAAAAAAACAAAkAIAAA=</HashCode>
+      <FileName>Devices\MusicCenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicCenter.Radio" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACBSAAAAAAAACAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Devices\Radio.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicCenter.Refrigerator" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAgFKAAAAAAAEAAAAAAAAAAAAAAAAkAgAAA=</HashCode>
+      <FileName>Devices\Refrigerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicCenter.TV" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACBAAAAAAAAACBAAAAAAAAAAAMAAAAA=</HashCode>
+      <FileName>Devices\TV.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MusicCenter.Program" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAABADAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MusicCenter.IDeviceChangeMode" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Interfaces\IDeviceChangeMode.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicCenter.IdoorOpen" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Interfaces\IdoorOpen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicCenter.IFrostdoorOpen" Collapsed="true">
+    <Position X="15.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFrostdoorOpen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicCenter.IOnOff" Collapsed="true">
+    <Position X="17.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Interfaces\IOnOff.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicCenter.IRadioChannel" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRadioChannel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicCenter.ITemperature" Collapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITemperature.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicCenter.ITVChangeChannel" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITVChangeChannel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MusicCenter.IVolume" Collapsed="true">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IVolume.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MusicCenter.AirCondMode" Collapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\AirCondMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MusicCenter.FrostLevel" Collapsed="true">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAgAAAAgAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Enum\FrostLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MusicCenter.MusicCenterMode" Collapsed="true">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAEA=</HashCode>
+      <FileName>Enum\MusicCenterMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MusicCenter.TVChannelsList" Collapsed="true">
+    <Position X="17.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAABAAAAAAAABAAAAACAAAABAAAAAAEABAAAA=</HashCode>
+      <FileName>Enum\TVChannelsList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
